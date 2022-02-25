@@ -1,4 +1,6 @@
-package br.com.dio.desafio.dominio;
+package br.com.dio.desafio.dominio.pessoas;
+import br.com.dio.desafio.dominio.Bootcamp;
+import br.com.dio.desafio.dominio.conteudos.Conteudo;
 
 import java.util.LinkedHashSet;
 import java.util.Objects;

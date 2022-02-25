@@ -1,5 +1,8 @@
 package br.com.dio.desafio.dominio;
 
+import br.com.dio.desafio.dominio.conteudos.Conteudo;
+import br.com.dio.desafio.dominio.pessoas.*;
+
 import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
@@ -14,21 +17,18 @@ public class Bootcamp {
     private Set<Dev> devsInscritos = new HashSet<>();
     private Set<Conteudo> conteudos = new LinkedHashSet<>();
 
+    public Bootcamp(String nome, String descricao, Set<Conteudo> conteudos) {
+        this.nome = nome;
+        this.descricao = descricao;
+        this.conteudos.addAll(conteudos) ;
+    }
 
     public String getNome() {
         return nome;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
     public String getDescricao() {
         return descricao;
-    }
-
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
     }
 
     public LocalDate getDataInicial() {
@@ -43,16 +43,8 @@ public class Bootcamp {
         return devsInscritos;
     }
 
-    public void setDevsInscritos(Set<Dev> devsInscritos) {
-        this.devsInscritos = devsInscritos;
-    }
-
     public Set<Conteudo> getConteudos() {
         return conteudos;
-    }
-
-    public void setConteudos(Set<Conteudo> conteudos) {
-        this.conteudos = conteudos;
     }
 
     @Override

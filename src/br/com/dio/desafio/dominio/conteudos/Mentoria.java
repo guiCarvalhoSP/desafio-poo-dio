@@ -1,4 +1,4 @@
-package br.com.dio.desafio.dominio;
+package br.com.dio.desafio.dominio.conteudos;
 
 import java.time.LocalDate;
 
@@ -11,7 +11,8 @@ public class Mentoria extends Conteudo{
         return XP_PADRAO + 20d;
     }
 
-    public Mentoria() {
+    public Mentoria(String nome, String descricao) {
+        super(nome, descricao);
     }
 
     public LocalDate getData() {

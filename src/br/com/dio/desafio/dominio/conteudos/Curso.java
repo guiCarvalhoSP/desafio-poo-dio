@@ -1,4 +1,4 @@
-package br.com.dio.desafio.dominio;
+package br.com.dio.desafio.dominio.conteudos;
 
 public class Curso extends Conteudo{
 
@@ -9,7 +9,9 @@ public class Curso extends Conteudo{
         return XP_PADRAO * cargaHoraria;
     }
 
-    public Curso() {
+    public Curso(String nome, String descricao, int cargaHoraria) {
+        super(nome, descricao);
+        this.cargaHoraria = cargaHoraria;
     }
 
 
